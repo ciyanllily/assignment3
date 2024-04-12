@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2be33d6234c14b833fb8546243da585c {
+                    position: relative;
+                    width: 800.0px;
+                    height: 600.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2be33d6234c14b833fb8546243da585c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2be33d6234c14b833fb8546243da585c = L.map(
+                "map_2be33d6234c14b833fb8546243da585c",
+                {
+                    center: [51.507231, -0.12759],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_2be33d6234c14b833fb8546243da585c);
+
+            
+
+        
+    
+            var tile_layer_6f516e26858e86fa805cb0dfa48cbbcb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var marker_a365030626fe43b195a6c06223440095 = L.marker(
+                [54.945643, -1.947967],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_219d90cc3645025752c0325d208ce2e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a365030626fe43b195a6c06223440095.setIcon(icon_219d90cc3645025752c0325d208ce2e6);
+        
+    
+        var popup_8d701ea3fbb8a3ea845b44e6183693b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93d039aec6ffb50b16be35527a94983a = $(`<div id="html_93d039aec6ffb50b16be35527a94983a" style="width: 100.0%; height: 100.0%;">Region:North East; Women as victims(%): 6.2; Men as victims(%): 2.5</div>`)[0];
+                popup_8d701ea3fbb8a3ea845b44e6183693b9.setContent(html_93d039aec6ffb50b16be35527a94983a);
+            
+        
+
+        marker_a365030626fe43b195a6c06223440095.bindPopup(popup_8d701ea3fbb8a3ea845b44e6183693b9)
+        ;
+
+        
+    
+    
+            var marker_2550bac385dd126bc2dea451bf4636ed = L.marker(
+                [53.533336, -2.69218],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_9560332436d8e03a27856d430f45ba73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2550bac385dd126bc2dea451bf4636ed.setIcon(icon_9560332436d8e03a27856d430f45ba73);
+        
+    
+        var popup_b713a2726770fc06bab8f19f8f947c30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d03b849e051cae17cd1e2935eef81e0f = $(`<div id="html_d03b849e051cae17cd1e2935eef81e0f" style="width: 100.0%; height: 100.0%;">Region:North West; Women as victims(%): 7.2; Men as victims(%): 3.3</div>`)[0];
+                popup_b713a2726770fc06bab8f19f8f947c30.setContent(html_d03b849e051cae17cd1e2935eef81e0f);
+            
+        
+
+        marker_2550bac385dd126bc2dea451bf4636ed.bindPopup(popup_b713a2726770fc06bab8f19f8f947c30)
+        ;
+
+        
+    
+    
+            var marker_03a6995b1be9cf6012006cde4ad598a6 = L.marker(
+                [53.906232, -1.033358],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_18b7b86873463a5fb70a2da08b0a4d97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_03a6995b1be9cf6012006cde4ad598a6.setIcon(icon_18b7b86873463a5fb70a2da08b0a4d97);
+        
+    
+        var popup_05178efe5b46ffb48a9dfcc8990fda81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2581228a3c5e34a89714a06ef8c55127 = $(`<div id="html_2581228a3c5e34a89714a06ef8c55127" style="width: 100.0%; height: 100.0%;">Region:Yorkshire and The Humber; Women as victims(%): 6.5; Men as victims(%): 3.0</div>`)[0];
+                popup_05178efe5b46ffb48a9dfcc8990fda81.setContent(html_2581228a3c5e34a89714a06ef8c55127);
+            
+        
+
+        marker_03a6995b1be9cf6012006cde4ad598a6.bindPopup(popup_05178efe5b46ffb48a9dfcc8990fda81)
+        ;
+
+        
+    
+    
+            var marker_eb3b6689e6942fe9e5f0d75ae9248351 = L.marker(
+                [53.045236, -0.398212],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_1fb15127c699688254586f2049b86070 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb3b6689e6942fe9e5f0d75ae9248351.setIcon(icon_1fb15127c699688254586f2049b86070);
+        
+    
+        var popup_1c24b01964ce9de676dd36a9fcdab904 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d463b77e9bf3885fd52a5494e53933d9 = $(`<div id="html_d463b77e9bf3885fd52a5494e53933d9" style="width: 100.0%; height: 100.0%;">Region:East Midlands; Women as victims(%): 7.1; Men as victims(%): 5.0</div>`)[0];
+                popup_1c24b01964ce9de676dd36a9fcdab904.setContent(html_d463b77e9bf3885fd52a5494e53933d9);
+            
+        
+
+        marker_eb3b6689e6942fe9e5f0d75ae9248351.bindPopup(popup_1c24b01964ce9de676dd36a9fcdab904)
+        ;
+
+        
+    
+    
+            var marker_058b67e74520e8b97e9f9094b5505d62 = L.marker(
+                [52.47509, -1.829832],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_738b7dd35488a16d967eb02f6434937e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_058b67e74520e8b97e9f9094b5505d62.setIcon(icon_738b7dd35488a16d967eb02f6434937e);
+        
+    
+        var popup_d2b69c831cab01723c79094fed254a4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb0fb76e5a298642fb72291fddaefdea = $(`<div id="html_cb0fb76e5a298642fb72291fddaefdea" style="width: 100.0%; height: 100.0%;">Region:West Midlands; Women as victims(%): 6.6; Men as victims(%): 2.7</div>`)[0];
+                popup_d2b69c831cab01723c79094fed254a4f.setContent(html_cb0fb76e5a298642fb72291fddaefdea);
+            
+        
+
+        marker_058b67e74520e8b97e9f9094b5505d62.bindPopup(popup_d2b69c831cab01723c79094fed254a4f)
+        ;
+
+        
+    
+    
+            var marker_c4a98281872cd9cf79c6b7402ef385d9 = L.marker(
+                [52.20531, 0.121814],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_2f59eb2269fba0e44af83fe5883ab915 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4a98281872cd9cf79c6b7402ef385d9.setIcon(icon_2f59eb2269fba0e44af83fe5883ab915);
+        
+    
+        var popup_6bc7320eca500d44190f7fa74fa0af7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49df1c9e27ff664b0001f1f3b992c1e1 = $(`<div id="html_49df1c9e27ff664b0001f1f3b992c1e1" style="width: 100.0%; height: 100.0%;">Region:East; Women as victims(%): 5.1; Men as victims(%): 1.5</div>`)[0];
+                popup_6bc7320eca500d44190f7fa74fa0af7c.setContent(html_49df1c9e27ff664b0001f1f3b992c1e1);
+            
+        
+
+        marker_c4a98281872cd9cf79c6b7402ef385d9.bindPopup(popup_6bc7320eca500d44190f7fa74fa0af7c)
+        ;
+
+        
+    
+    
+            var marker_7bb95c6a3b842b1da08f6a7d69561828 = L.marker(
+                [51.507231, -0.12759],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_eabebcc12812c4fd51a879cf81e09719 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7bb95c6a3b842b1da08f6a7d69561828.setIcon(icon_eabebcc12812c4fd51a879cf81e09719);
+        
+    
+        var popup_2b63651d23827b8ac198b8302cfa843b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c81ccd2c127634913570359b6e5e9c65 = $(`<div id="html_c81ccd2c127634913570359b6e5e9c65" style="width: 100.0%; height: 100.0%;">Region:London; Women as victims(%): 1.8; Men as victims(%): 1.7</div>`)[0];
+                popup_2b63651d23827b8ac198b8302cfa843b.setContent(html_c81ccd2c127634913570359b6e5e9c65);
+            
+        
+
+        marker_7bb95c6a3b842b1da08f6a7d69561828.bindPopup(popup_2b63651d23827b8ac198b8302cfa843b)
+        ;
+
+        
+    
+    
+            var marker_a43ca9d57a4c3c449719da93ba3202de = L.marker(
+                [51.178132, -0.559565],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_68e7eb2ebd582e4eff5a7880bc5c54db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a43ca9d57a4c3c449719da93ba3202de.setIcon(icon_68e7eb2ebd582e4eff5a7880bc5c54db);
+        
+    
+        var popup_4705ef1ff0773fc5183b0bfc1eedfab2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e085f1b48b45c587681b355aef41d010 = $(`<div id="html_e085f1b48b45c587681b355aef41d010" style="width: 100.0%; height: 100.0%;">Region:South East; Women as victims(%): 6.3; Men as victims(%): 4.0</div>`)[0];
+                popup_4705ef1ff0773fc5183b0bfc1eedfab2.setContent(html_e085f1b48b45c587681b355aef41d010);
+            
+        
+
+        marker_a43ca9d57a4c3c449719da93ba3202de.bindPopup(popup_4705ef1ff0773fc5183b0bfc1eedfab2)
+        ;
+
+        
+    
+    
+            var marker_3449f61965cf4e60ef088196954353a9 = L.marker(
+                [50.777222, -3.999465],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_61970232552f01bb82d961cc7c32f065 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3449f61965cf4e60ef088196954353a9.setIcon(icon_61970232552f01bb82d961cc7c32f065);
+        
+    
+        var popup_5987b9ee2863f2ffdf10489b5f26a26a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54184abcdb2508be7de864c67ea04d7d = $(`<div id="html_54184abcdb2508be7de864c67ea04d7d" style="width: 100.0%; height: 100.0%;">Region:South West; Women as victims(%): 5.2; Men as victims(%): 4.8</div>`)[0];
+                popup_5987b9ee2863f2ffdf10489b5f26a26a.setContent(html_54184abcdb2508be7de864c67ea04d7d);
+            
+        
+
+        marker_3449f61965cf4e60ef088196954353a9.bindPopup(popup_5987b9ee2863f2ffdf10489b5f26a26a)
+        ;
+
+        
+    
+    
+            var marker_3d0c10fe04219543c4482fa560fb0925 = L.marker(
+                [52.130673, -3.783715],
+                {}
+            ).addTo(map_2be33d6234c14b833fb8546243da585c);
+        
+    
+            var icon_b802da8ba9c4def18c80b3e169b50b92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d0c10fe04219543c4482fa560fb0925.setIcon(icon_b802da8ba9c4def18c80b3e169b50b92);
+        
+    
+        var popup_fb71a73ea8d7fc29311d533da96b7d10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_532e78e4651abfba237ad3bb4cf30d75 = $(`<div id="html_532e78e4651abfba237ad3bb4cf30d75" style="width: 100.0%; height: 100.0%;">Region:Wales; Women as victims(%): 6.3; Men as victims(%): 3.9</div>`)[0];
+                popup_fb71a73ea8d7fc29311d533da96b7d10.setContent(html_532e78e4651abfba237ad3bb4cf30d75);
+            
+        
+
+        marker_3d0c10fe04219543c4482fa560fb0925.bindPopup(popup_fb71a73ea8d7fc29311d533da96b7d10)
+        ;
+
+        
+    
+</script>
+</html>
